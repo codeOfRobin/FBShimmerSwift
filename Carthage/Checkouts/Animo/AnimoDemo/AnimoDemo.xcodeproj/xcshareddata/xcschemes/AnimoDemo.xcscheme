@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42822FC91D671F1500B147F7"
-               BuildableName = "FBShimmerSwift.app"
-               BlueprintName = "FBShimmerSwift"
-               ReferencedContainer = "container:FBShimmerSwift.xcodeproj">
+               BlueprintIdentifier = "B5687D831BB6F0A700168B7E"
+               BuildableName = "AnimoDemo.app"
+               BlueprintName = "AnimoDemo"
+               ReferencedContainer = "container:AnimoDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,34 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42822FDD1D671F1500B147F7"
-               BuildableName = "FBShimmerSwiftTests.xctest"
-               BlueprintName = "FBShimmerSwiftTests"
-               ReferencedContainer = "container:FBShimmerSwift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42822FE81D671F1500B147F7"
-               BuildableName = "FBShimmerSwiftUITests.xctest"
-               BlueprintName = "FBShimmerSwiftUITests"
-               ReferencedContainer = "container:FBShimmerSwift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42822FC91D671F1500B147F7"
-            BuildableName = "FBShimmerSwift.app"
-            BlueprintName = "FBShimmerSwift"
-            ReferencedContainer = "container:FBShimmerSwift.xcodeproj">
+            BlueprintIdentifier = "B5687D831BB6F0A700168B7E"
+            BuildableName = "AnimoDemo.app"
+            BlueprintName = "AnimoDemo"
+            ReferencedContainer = "container:AnimoDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42822FC91D671F1500B147F7"
-            BuildableName = "FBShimmerSwift.app"
-            BlueprintName = "FBShimmerSwift"
-            ReferencedContainer = "container:FBShimmerSwift.xcodeproj">
+            BlueprintIdentifier = "B5687D831BB6F0A700168B7E"
+            BuildableName = "AnimoDemo.app"
+            BlueprintName = "AnimoDemo"
+            ReferencedContainer = "container:AnimoDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "42822FC91D671F1500B147F7"
-            BuildableName = "FBShimmerSwift.app"
-            BlueprintName = "FBShimmerSwift"
-            ReferencedContainer = "container:FBShimmerSwift.xcodeproj">
+            BlueprintIdentifier = "B5687D831BB6F0A700168B7E"
+            BuildableName = "AnimoDemo.app"
+            BlueprintName = "AnimoDemo"
+            ReferencedContainer = "container:AnimoDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

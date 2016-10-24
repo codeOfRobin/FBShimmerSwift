@@ -14,6 +14,8 @@
 		42822FD81D671F1500B147F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42822FD61D671F1500B147F7 /* LaunchScreen.storyboard */; };
 		42822FE31D671F1500B147F7 /* FBShimmerSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42822FE21D671F1500B147F7 /* FBShimmerSwiftTests.swift */; };
 		42822FEE1D671F1500B147F7 /* FBShimmerSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42822FED1D671F1500B147F7 /* FBShimmerSwiftUITests.swift */; };
+		42D14EA61DBD3FEE00CF98D5 /* Animo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42822FFB1D68DBA100B147F7 /* Animo.framework */; };
+		42D14EA71DBD3FEE00CF98D5 /* Animo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 42822FFB1D68DBA100B147F7 /* Animo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		42D14EA81DBD3FEE00CF98D5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				42D14EA71DBD3FEE00CF98D5 /* Animo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		42822FCA1D671F1500B147F7 /* FBShimmerSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBShimmerSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42822FCD1D671F1500B147F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +63,7 @@
 		42822FE91D671F1500B147F7 /* FBShimmerSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBShimmerSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42822FED1D671F1500B147F7 /* FBShimmerSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBShimmerSwiftUITests.swift; sourceTree = "<group>"; };
 		42822FEF1D671F1500B147F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42822FFB1D68DBA100B147F7 /* Animo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Animo.framework; path = Carthage/Build/iOS/Animo.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D14EA61DBD3FEE00CF98D5 /* Animo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +95,7 @@
 		42822FC11D671F1500B147F7 = {
 			isa = PBXGroup;
 			children = (
+				42822FFB1D68DBA100B147F7 /* Animo.framework */,
 				42822FCC1D671F1500B147F7 /* FBShimmerSwift */,
 				42822FE11D671F1500B147F7 /* FBShimmerSwiftTests */,
 				42822FEC1D671F1500B147F7 /* FBShimmerSwiftUITests */,
@@ -135,6 +154,7 @@
 				42822FC61D671F1500B147F7 /* Sources */,
 				42822FC71D671F1500B147F7 /* Frameworks */,
 				42822FC81D671F1500B147F7 /* Resources */,
+				42D14EA81DBD3FEE00CF98D5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,18 +208,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Robin Malhotra";
 				TargetAttributes = {
 					42822FC91D671F1500B147F7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					42822FDD1D671F1500B147F7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 42822FC91D671F1500B147F7;
 					};
 					42822FE81D671F1500B147F7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 42822FC91D671F1500B147F7;
 					};
 				};
@@ -326,8 +349,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -372,8 +397,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -392,6 +419,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -401,10 +429,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FBShimmerSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kayako.FBShimmerSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -412,10 +445,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FBShimmerSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kayako.FBShimmerSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -427,6 +465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kayako.FBShimmerSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBShimmerSwift.app/FBShimmerSwift";
 			};
 			name = Debug;
@@ -439,6 +478,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kayako.FBShimmerSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBShimmerSwift.app/FBShimmerSwift";
 			};
 			name = Release;
@@ -450,6 +490,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kayako.FBShimmerSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FBShimmerSwift;
 			};
 			name = Debug;
@@ -461,6 +502,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kayako.FBShimmerSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = FBShimmerSwift;
 			};
 			name = Release;
@@ -484,6 +526,7 @@
 				42822FF41D671F1500B147F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42822FF51D671F1500B147F7 /* Build configuration list for PBXNativeTarget "FBShimmerSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +535,7 @@
 				42822FF71D671F1500B147F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42822FF81D671F1500B147F7 /* Build configuration list for PBXNativeTarget "FBShimmerSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +544,7 @@
 				42822FFA1D671F1500B147F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
